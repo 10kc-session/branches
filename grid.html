@@ -1,0 +1,87 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sample
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 400px;
+            column-gap: 10px;
+            row-gap: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sample">
+        <div style="background-color: lightblue;">
+            100px
+        </div>
+        <div style="background-color: lightpink;">
+            100px
+        </div>
+        <div style="background-color: lightblue;">
+            100px
+        </div>
+        <div style="background-color: lightpink;">
+            100px
+        </div>
+        <div style="background-color: lightblue;">
+            100px
+        </div>
+        <div style="background-color: lightpink;">
+            100px
+        </div>
+    </div>
+    <!-- grid-template-columns : defines how no of columns needed -->
+    <div style="
+                display: grid;
+                grid-template-columns: 100px 100px;
+            ">
+        <div style="background-color: lightblue;">
+            div 1
+        </div>
+        <div style="background-color: lightpink;">
+            div 2
+            <p>Text</p>
+        </div>
+    </div>
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;
+    ">
+        <div style="background-color: lightblue;">
+            100px
+        </div>
+        <div style="background-color: lightpink;">
+            100px
+            <p>Text</p>
+        </div>
+        <div style="background-color: lightgray;">
+            200px
+        </div>
+        <div style="background-color: pink;">
+            Hey                                    <!-- Creates new row because we have declared 3 columns only -->
+        </div>
+    </div>
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2 fr;
+    ">
+        <div style="background-color: lightblue;">
+            100px
+        </div>
+        <div style="background-color: lightpink;">
+            100px
+        </div>
+        
+</body>
+
+</html>
